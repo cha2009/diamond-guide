@@ -1,0 +1,863 @@
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="천연 다이아몬드와 합성 다이아몬드의 차이, 과학적 감별 방법과 구매 전 확인 사항을 알려 주는 소비자 가이드입니다.">
+<title>다이아몬드 선택 가이드</title>
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;600;700&family=Noto+Serif+KR:wght@400;500;600;700&display=swap');
+
+:root {
+  --bg: #0b0c0e;
+  --panel: #141619;
+  --panel-light: #1b1e22;
+  --gold: #d6bd83;
+  --gold-light: #f0dfb5;
+  --text: #eeeae2;
+  --muted: #aaa9a3;
+  --line: #33332f;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: 'Noto Sans KR', sans-serif;
+  line-height: 1.85;
+  word-break: keep-all;
+}
+
+a {
+  color: var(--gold-light);
+  text-underline-offset: 4px;
+}
+
+a:hover {
+  color: white;
+}
+
+header {
+  padding: 75px 22px 48px;
+  text-align: center;
+  background:
+    radial-gradient(ellipse at 50% 0%, #353024 0%, transparent 62%),
+    linear-gradient(180deg, #171713, #0b0c0e);
+  border-bottom: 1px solid #3b3425;
+}
+
+.eyebrow {
+  color: var(--gold);
+  font-size: 11px;
+  letter-spacing: 5px;
+  margin-bottom: 18px;
+}
+
+header h1 {
+  font-family: 'Noto Serif KR', serif;
+  font-weight: 500;
+  letter-spacing: 2px;
+  font-size: clamp(30px, 5vw, 48px);
+  margin: 0;
+}
+
+header p {
+  color: #c3c0b7;
+  font-size: 14px;
+  margin: 20px auto 0;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px 25px;
+  padding: 15px;
+  background: #101113;
+  border-bottom: 1px solid var(--line);
+}
+
+nav a {
+  color: #c7c3b9;
+  font-size: 12px;
+  text-decoration: none;
+}
+
+nav a:hover {
+  color: var(--gold-light);
+}
+
+main {
+  width: min(100% - 32px, 1000px);
+  margin: 0 auto;
+}
+
+section {
+  margin: 32px 0;
+  padding: clamp(22px, 4vw, 38px);
+  background: var(--panel);
+  border: 1px solid #292a28;
+  border-radius: 5px;
+}
+
+.section-number {
+  color: var(--gold);
+  font-size: 11px;
+  letter-spacing: 3px;
+  margin-bottom: 5px;
+}
+
+h2 {
+  font-family: 'Noto Serif KR', serif;
+  font-size: clamp(21px, 3vw, 27px);
+  font-weight: 500;
+  margin: 0 0 20px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #514631;
+}
+
+h3 {
+  color: var(--gold-light);
+  font-size: 16px;
+  font-weight: 600;
+  margin: 27px 0 10px;
+}
+
+p {
+  margin: 12px 0;
+}
+
+.intro {
+  color: #c9c6bd;
+  font-size: 14px;
+}
+
+.gold {
+  color: var(--gold-light);
+}
+
+.muted {
+  color: var(--muted);
+  font-size: 13px;
+}
+
+.feature-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.feature-list li {
+  padding: 17px 0;
+  border-bottom: 1px solid var(--line);
+}
+
+.feature-list li:last-child {
+  border-bottom: none;
+}
+
+.feature-list strong {
+  display: block;
+  color: var(--gold-light);
+  font-size: 15px;
+  margin-bottom: 5px;
+}
+
+.feature-list p {
+  color: #c7c5bf;
+  font-size: 14px;
+  margin: 0;
+}
+
+.table-wrap {
+  width: 100%;
+  overflow-x: auto;
+  margin-top: 18px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 13px;
+  min-width: 580px;
+}
+
+th {
+  color: var(--gold-light);
+  background: #24231e;
+  font-weight: 500;
+}
+
+td, th {
+  padding: 14px 12px;
+  text-align: left;
+  vertical-align: top;
+  border: 1px solid #373630;
+}
+
+tbody tr:nth-child(even) {
+  background: #191b1d;
+}
+
+td:first-child {
+  color: #e0d1aa;
+  min-width: 125px;
+}
+
+.note {
+  padding: 15px 17px;
+  margin-top: 18px;
+  background: #1c1b17;
+  border-left: 3px solid var(--gold);
+  color: #cbc7bd;
+  font-size: 13px;
+}
+
+.check-group {
+  padding: 19px 0;
+  border-bottom: 1px solid var(--line);
+}
+
+.check-group:last-of-type {
+  border-bottom: none;
+}
+
+.check-group h3 {
+  margin: 0 0 13px;
+}
+
+.check-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 11px;
+  margin: 12px 0;
+  cursor: pointer;
+  font-size: 13px;
+  color: #d7d5ce;
+  line-height: 1.75;
+}
+
+.check-item input {
+  flex-shrink: 0;
+  width: 17px;
+  height: 17px;
+  margin-top: 4px;
+  accent-color: var(--gold);
+  cursor: pointer;
+}
+
+.score-panel {
+  background: #201f1a;
+  border: 1px solid #504630;
+  padding: 22px;
+  margin-top: 25px;
+}
+
+.score-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+}
+
+.score-label {
+  font-size: 13px;
+  color: #c9c3b3;
+}
+
+.score-number {
+  color: var(--gold-light);
+  font-family: 'Noto Serif KR', serif;
+  font-size: 30px;
+}
+
+.progress {
+  height: 5px;
+  margin: 13px 0 17px;
+  background: #3b3932;
+  overflow: hidden;
+}
+
+.progress-fill {
+  height: 100%;
+  width: 0%;
+  background: var(--gold);
+  transition: width .2s;
+}
+
+button {
+  padding: 12px 18px;
+  background: var(--gold);
+  color: #171510;
+  border: 1px solid var(--gold);
+  font-family: inherit;
+  font-size: 13px;
+  font-weight: 700;
+  cursor: pointer;
+  border-radius: 2px;
+}
+
+button:hover {
+  background: var(--gold-light);
+}
+
+button.secondary {
+  background: transparent;
+  color: var(--gold-light);
+  margin-left: 7px;
+}
+
+#result {
+  display: none;
+  margin-top: 20px;
+  padding-top: 17px;
+  border-top: 1px solid #504630;
+}
+
+#result h3 {
+  margin: 0 0 7px;
+}
+
+#result p {
+  color: #d0ccc2;
+  font-size: 13px;
+}
+
+.warning {
+  margin-top: 22px;
+  padding: 19px;
+  border: 1px solid #66513a;
+  background: #211b16;
+}
+
+.warning h3 {
+  margin: 0 0 8px;
+  color: #e5c89b;
+}
+
+.warning ul {
+  margin-bottom: 0;
+  padding-left: 20px;
+  color: #d1c8ba;
+  font-size: 13px;
+}
+
+.shop-list {
+  list-style: none;
+  padding: 0;
+}
+
+.shop-list li {
+  padding: 14px 0;
+  border-bottom: 1px solid var(--line);
+  font-size: 13px;
+  color: #cfcdc6;
+}
+
+.shop-list li:last-child {
+  border-bottom: none;
+}
+
+.shop-list strong {
+  color: var(--gold-light);
+  font-size: 14px;
+}
+
+.lab-info {
+  margin-top: 20px;
+  padding-top: 15px;
+  border-top: 1px solid var(--line);
+  color: #a9a79f;
+  font-size: 11px;
+  line-height: 1.9;
+}
+
+.closing {
+  text-align: center;
+  padding: 38px 22px;
+  background:
+    radial-gradient(ellipse at center, #29251b, transparent 75%),
+    var(--panel);
+}
+
+.closing h2 {
+  border-bottom: none;
+  margin-bottom: 15px;
+}
+
+.closing p {
+  color: #d1cec4;
+  font-size: 14px;
+}
+
+.closing .last-line {
+  color: var(--gold-light);
+  font-family: 'Noto Serif KR', serif;
+  font-size: 17px;
+  margin-top: 25px;
+}
+
+.sources li {
+  color: #c6c3bb;
+  font-size: 12px;
+  margin: 10px 0;
+}
+
+.sources a {
+  overflow-wrap: anywhere;
+}
+
+footer {
+  text-align: center;
+  padding: 25px 15px 40px;
+  color: #77766f;
+  font-size: 11px;
+}
+
+@media (max-width: 600px) {
+  header {
+    padding: 55px 18px 38px;
+  }
+
+  nav {
+    gap: 10px 16px;
+  }
+
+  section {
+    margin: 20px 0;
+    padding: 21px 17px;
+  }
+
+  .score-panel {
+    padding: 17px;
+  }
+
+  .check-item {
+    font-size: 12px;
+  }
+
+  button {
+    padding: 11px 13px;
+  }
+
+  .score-number {
+    font-size: 26px;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <div class="eyebrow">THE DIAMOND GUIDE</div>
+  <h1>다이아몬드 선택 가이드</h1>
+  <p>아름다움 너머의 정보까지, 알고 선택하는 다이아몬드</p>
+</header>
+
+<nav aria-label="페이지 목차">
+  <a href="#difference">핵심 차이</a>
+  <a href="#science">과학적 비교</a>
+  <a href="#checklist">구매 체크리스트</a>
+  <a href="#shops">구매처</a>
+  <a href="#sources">참고 자료</a>
+</nav>
+
+<main>
+
+<section id="difference">
+  <div class="section-number">01 / THE BASICS</div>
+  <h2>일반인이 꼭 알아야 할 핵심 차이 5가지</h2>
+  <p class="intro">
+    천연 다이아몬드와 합성 다이아몬드는 모두 탄소 결정으로 이루어져 있습니다.
+    그러나 성장 환경과 결정 내부의 특징, 시장 가격 등에는 차이가 있습니다.
+  </p>
+
+  <ol class="feature-list">
+    <li>
+      <strong>1. 화학 성분은 같지만, 태어난 환경이 다릅니다.</strong>
+      <p>천연 다이아몬드는 지구 깊은 곳에서 매우 오랜 시간에 걸쳐 형성됩니다. 합성 다이아몬드는 실험실에서 HPHT(고압·고온) 또는 CVD(화학기상증착) 방식으로 성장시킵니다. 합성은 조건에 따라 수 주에서 수개월이 걸릴 수 있습니다.</p>
+    </li>
+    <li>
+      <strong>2. 불순물과 결정 결함의 특징이 다를 수 있습니다.</strong>
+      <p>천연 다이아몬드에는 질소가 모인 Type Ia가 흔합니다. 보석용 무색·근무색 합성 다이아몬드에는 검출 가능한 질소가 거의 없는 Type II가 많습니다. 다만 두 유형 모두 예외가 있어 이것만으로 산지를 확정할 수는 없습니다.</p>
+    </li>
+    <li>
+      <strong>3. 포유물과 내부 성장 흔적이 다를 수 있습니다.</strong>
+      <p>천연 다이아몬드에서는 자연 광물 포유물이나 자연 성장 과정의 흔적이 관찰될 수 있습니다. HPHT 합성에서는 금속 촉매 관련 포유물이, CVD 합성에서는 층상 성장 구조 등이 나타날 수 있습니다. 모든 다이아몬드에서 이런 특징이 관찰되는 것은 아닙니다.</p>
+    </li>
+    <li>
+      <strong>4. 형광과 분광 반응을 전문 장비로 분석합니다.</strong>
+      <p>CVD 합성 다이아몬드에서는 SiV⁻ 결함과 관련된 발광 피크가 나타날 수 있으며, 자외선 형광 영상에서 성장 층이 보이기도 합니다. HPHT 합성에서는 금속 관련 특징이나 장시간 인광이 단서가 될 수 있습니다. 단일 특징만으로 판정하지 않고 여러 분석 결과를 함께 살펴야 합니다.</p>
+    </li>
+    <li>
+      <strong>5. 가격과 구매 목적이 다를 수 있습니다.</strong>
+      <p>합성 다이아몬드는 일반적으로 천연 다이아몬드보다 낮은 가격에 판매되므로 같은 예산으로 더 큰 제품을 고려할 수 있습니다. 실제 가격 차이는 중량, 색상, 투명도, 컷, 판매처 및 시장 상황에 따라 달라집니다. 재판매 가치도 별도로 확인하는 것이 좋습니다.</p>
+    </li>
+  </ol>
+
+  <div class="note">
+    <strong class="gold">기억할 점</strong><br>
+    합성 다이아몬드는 단순한 유리나 모조품이 아닙니다. 천연 다이아몬드와 기본적인 화학 조성 및 결정 구조가 같지만, 형성 과정이 다릅니다.
+  </div>
+</section>
+
+<section id="science">
+  <div class="section-number">02 / GEMOLOGY</div>
+  <h2>과학적 · 보석학적 차이</h2>
+  <p class="intro">
+    아래 특징은 감별에 활용되는 대표적인 경향입니다.
+    실제 감정에서는 다이아몬드마다 차이가 있으며, 표의 한 항목만으로 천연과 합성을 확정할 수 없습니다.
+  </p>
+
+  <div class="table-wrap">
+    <table>
+      <thead>
+        <tr>
+          <th>구분</th>
+          <th>천연 다이아몬드</th>
+          <th>합성 다이아몬드</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>형성 환경</strong></td>
+          <td>지구 깊은 곳의 고압·고온 환경에서 형성. 많은 보석급 다이아몬드는 수억~수십억 년의 지질학적 역사를 가짐.</td>
+          <td>실험실에서 HPHT 또는 CVD 방식으로 성장. 수 주~수개월이 걸릴 수 있음.</td>
+        </tr>
+        <tr>
+          <td><strong>불순물 타입</strong></td>
+          <td>질소가 응집된 Type Ia가 흔함.</td>
+          <td>무색·근무색 보석급 제품에는 질소가 거의 없는 Type II가 많음.</td>
+        </tr>
+        <tr>
+          <td><strong>포유물</strong></td>
+          <td>자연 광물이나 자연 성장 과정의 흔적이 나타날 수 있음.</td>
+          <td>HPHT는 금속 촉매 관련 포유물이 나타날 수 있으며, CVD는 성장 관련 흔적이 관찰될 수 있음.</td>
+        </tr>
+        <tr>
+          <td><strong>형광·인광</strong></td>
+          <td>자외선 아래에서 다양한 형광 반응을 보임. 일부는 인광을 보일 수도 있음.</td>
+          <td>성장 방식과 처리에 따라 형광 패턴이나 인광 반응이 나타날 수 있음.</td>
+        </tr>
+        <tr>
+          <td><strong>분광 특징</strong></td>
+          <td>질소 관련 흡수 특징 등 여러 분광 신호가 나타날 수 있음.</td>
+          <td>CVD에서는 SiV⁻ 관련 발광 피크 등이 단서가 될 수 있음. 다만 모든 제품에 나타나는 것은 아님.</td>
+        </tr>
+        <tr>
+          <td><strong>결정 성장 패턴</strong></td>
+          <td>자연 성장 과정에서 형성된 다양한 성장 구역과 내부 패턴이 관찰될 수 있음.</td>
+          <td>CVD는 층상 성장, HPHT는 성장 구역별 패턴 등 제조 방식과 관련된 특징이 나타날 수 있음.</td>
+        </tr>
+        <tr>
+          <td><strong>감정 난이도</strong></td>
+          <td>육안만으로 천연임을 확정할 수 없음. 필요한 경우 전문 분석이 필요함.</td>
+          <td>육안만으로 합성임을 확정할 수 없음. 형광 영상, 적외선 흡수, 광발광(PL) 분석 등 복합 검사가 활용됨.</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="note">
+    <strong class="gold">용어 설명</strong><br>
+    <strong>Type Ia / Type II:</strong> 다이아몬드에 포함된 질소 불순물의 상태에 따른 분류입니다.<br>
+    <strong>HPHT:</strong> 고압·고온 조건에서 다이아몬드를 성장시키는 방식입니다.<br>
+    <strong>CVD:</strong> 기체에서 탄소를 분리해 기판 위에 층층이 성장시키는 방식입니다.<br>
+    <strong>SiV⁻:</strong> 다이아몬드 결정에서 규소와 빈자리 결함이 결합한 음전하 상태의 결함입니다.<br>
+    <strong>PL 분광:</strong> 빛을 조사했을 때 나타나는 발광 신호를 분석하는 방법입니다.
+  </div>
+</section>
+
+<section id="checklist">
+  <div class="section-number">03 / BEFORE YOU BUY</div>
+  <h2>구매 전 체크리스트</h2>
+  <p class="intro">
+    구매 전에 실제로 확인한 항목에 체크해 보세요.
+    각 항목은 2점이며, 확인하지 못한 항목은 체크하지 않으면 됩니다.
+  </p>
+
+  <div class="check-group">
+    <h3>① 감정서·인증 확인</h3>
+    <label class="check-item">
+      <input type="checkbox" class="score-check">
+      <span>GIA, IGI, AGS 등 공인 감정기관의 <strong>보고서 번호</strong>가 있는가?</span>
+    </label>
+    <label class="check-item">
+      <input type="checkbox" class="score-check">
+      <span>보고서에 <strong>"Natural Diamond"</strong> 또는 <strong>"Laboratory-Grown Diamond"</strong> 라고 명확히 표기되었는가?</span>
+    </label>
+    <label class="check-item">
+      <input type="checkbox" class="score-check">
+      <span>감정서 내용을 감정기관 홈페이지에서 <strong>보고서 번호로 직접 조회</strong> 가능한가?</span>
+    </label>
+  </div>
+
+  <div class="check-group">
+    <h3>② 판매처 신뢰도</h3>
+    <label class="check-item">
+      <input type="checkbox" class="score-check">
+      <span>30일 이상 <strong>반품 기간</strong>과 <strong>무료 반품</strong>을 제공하는가?</span>
+    </label>
+    <label class="check-item">
+      <input type="checkbox" class="score-check">
+      <span>360° 고해상도 영상 또는 확대 사진을 제공하는가?</span>
+    </label>
+    <label class="check-item">
+      <input type="checkbox" class="score-check">
+      <span>보험 처리된 배송과 배송 확인 시스템을 사용하는가?</span>
+    </label>
+    <label class="check-item">
+      <input type="checkbox" class="score-check">
+      <span>가상 보석학자 상담이나 전문가 문의가 가능한가?</span>
+    </label>
+  </div>
+
+  <div class="check-group">
+    <h3>③ 제품 정보 투명성</h3>
+    <label class="check-item">
+      <input type="checkbox" class="score-check">
+      <span>4C(색상, 클리어리티, 컷, 중량)가 모두 명시되었는가?</span>
+    </label>
+    <label class="check-item">
+      <input type="checkbox" class="score-check">
+      <span>합성이라면 <strong>HPHT인지 CVD인지</strong> 공정 방법이 표기되었는가?</span>
+    </label>
+    <label class="check-item">
+      <input type="checkbox" class="score-check">
+      <span>후처리(열처리, 조사 등) 여부가 감정서에 기록되었는가?</span>
+    </label>
+  </div>
+
+  <div class="check-group">
+    <h3>④ 가격·가치 비교</h3>
+    <label class="check-item">
+      <input type="checkbox" class="score-check">
+      <span>같은 4C 기준의 천연 다이아몬드와 비교했을 때, 합성 다이아몬드의 가격이 충분히 낮게 형성되어 있는가? <span class="muted">(같은 판매처의 비교 가능한 제품을 먼저 확인하세요.)</span></span>
+    </label>
+    <label class="check-item">
+      <input type="checkbox" class="score-check">
+      <span>합성 다이아몬드의 <strong>재판매·업그레이드 정책</strong>이 있는가?</span>
+    </label>
+  </div>
+
+  <div class="score-panel">
+    <div class="score-top">
+      <span class="score-label">확인한 항목 점수</span>
+      <span class="score-number"><span id="score">0</span><span style="font-size:15px"> / 24점</span></span>
+    </div>
+    <div class="progress">
+      <div class="progress-fill" id="progressFill"></div>
+    </div>
+    <p class="muted">체크한 항목 하나당 2점이 자동으로 더해집니다.</p>
+
+    <button type="button" onclick="showResult()">결과 확인하기</button>
+    <button type="button" class="secondary" onclick="resetChecklist()">초기화</button>
+
+    <div id="result" aria-live="polite">
+      <h3 id="resultTitle"></h3>
+      <p id="resultText"></p>
+    </div>
+  </div>
+
+  <div class="warning">
+    <h3>구매 전 꼭 알아두세요</h3>
+    <ul>
+      <li>"손으로 만져보기", "입김 불기", "종이에 선 그어보기" 같은 인터넷 감별법은 <strong>부정확</strong>하므로 믿지 마세요.</li>
+      <li>육안이나 일반 보석 확대경으로는 천연과 합성을 확실하게 구분할 수 없으므로, <strong>반드시 공인 감정서를 요구하세요.</strong></li>
+    </ul>
+  </div>
+
+  <p class="muted">
+    점수는 구매 전 확인 사항을 얼마나 점검했는지 보여 주는 참고 지표입니다.
+    점수가 높아도 판매처의 신뢰성이나 제품의 진위가 보장되는 것은 아닙니다.
+    감정서의 진위, 판매 조건, 환불 규정은 별도로 확인하세요.
+  </p>
+</section>
+
+<section id="shops">
+  <div class="section-number">04 / WHERE TO SHOP</div>
+  <h2>믿고 살 수 있는 구매처</h2>
+  <p class="intro">
+    아래는 다이아몬드 구매를 알아볼 때 참고할 수 있는 판매처입니다.
+    실제 판매 품목, 감정서 종류, 반품 조건은 제품과 지역에 따라 달라질 수 있으므로 구매 전에 공식 사이트에서 확인하세요.
+  </p>
+
+  <ul class="shop-list">
+    <li>
+      <strong>James Allen</strong> :
+      GIA/IGI/AGS 감정서, 360° HD 영상, 천연·합성 모두 취급.
+      <br><a href="https://www.jamesallen.com/" target="_blank" rel="noopener noreferrer">공식 웹사이트</a>
+    </li>
+    <li>
+      <strong>Blue Nile</strong> :
+      GIA/IGI 감정서, 천연 중심이지만 합성도 취급.
+      <br><a href="https://www.bluenile.com/" target="_blank" rel="noopener noreferrer">공식 웹사이트</a>
+    </li>
+    <li>
+      <strong>Whiteflash</strong> :
+      GIA/AGS 중심, 슈퍼이deal 컷 천연 전문, 합성은 일부.
+      <br><a href="https://www.whiteflash.com/" target="_blank" rel="noopener noreferrer">공식 웹사이트</a>
+    </li>
+    <li>
+      <strong>Brian Gavin</strong> :
+      GIA/AGS, 성능 이미지 제공, 천연·합성 모두.
+      <br><a href="https://www.briangavindiamonds.com/" target="_blank" rel="noopener noreferrer">공식 웹사이트</a>
+    </li>
+    <li>
+      <strong>Brilliant Earth</strong> :
+      GIA/IGI, 윤리적 소싱 강조, 천연·합성 모두.
+      <br><a href="https://www.brilliantearth.com/" target="_blank" rel="noopener noreferrer">공식 웹사이트</a>
+    </li>
+    <li>
+      <strong>Rare Carat</strong> :
+      GIA·IGI 감정 lab-grown 전문, 가격 비교 기능.
+      <br><a href="https://www.rarecarat.com/" target="_blank" rel="noopener noreferrer">공식 웹사이트</a>
+    </li>
+  </ul>
+
+  <p class="muted">
+    한국에서는 GIA 한국동문회, 한국보석감정원, 한국주얼리산업협동조합 등의 관련 기관 정보를 추가로 확인할 수 있습니다.
+    다만 감정서 발급 여부와 감정 서비스 제공 범위는 기관별로 직접 확인해야 합니다.
+  </p>
+
+  <p class="lab-info">
+    GIA, IGI, AGS는 모두 다이아몬드의 4C(색상, 클리어리티, 컷, 중량)를 평가하고 감정서를 발급하는 공인 감정기관이며, GIA는 전 세계적으로 가장 권위 있는 기관, IGI는 합성 다이아몬드 감정에서 가장 많이 쓰이는 기관, AGS는 컷 등급을 가장 엄격하게 평가하는 미국 기관입니다.
+  </p>
+
+  <p class="muted">
+    참고: 위 설명은 사용자가 정리한 기관 소개를 반영한 것입니다.
+    기관별 평가 체계와 보고서 종류는 서로 다를 수 있으며, AGS의 기존 다이아몬드 등급 체계는 현재 GIA와의 협력 및 통합 과정도 고려해 확인하는 것이 좋습니다.
+  </p>
+</section>
+
+<section class="closing">
+  <div class="section-number">05 / IN CLOSING</div>
+  <h2>마치며</h2>
+  <p>
+    천연 다이아몬드는 오랜 지질학적 시간을 거쳐 자연에서 탄생한 보석이고,
+    합성 다이아몬드는 인간의 과학과 기술이 만들어 낸 보석입니다.
+    두 다이아몬드는 기본적인 화학 조성과 결정 구조가 같지만,
+    형성 과정과 시장에서의 가치에는 차이가 있습니다.
+  </p>
+  <p>
+    어느 한쪽이 무조건 더 좋다고 단정할 필요는 없습니다.
+    중요한 것은 천연인지 합성인지 정확하게 알고,
+    제품 정보와 감정서, 예산과 구매 목적을 함께 고려하는 것입니다.
+  </p>
+  <p class="last-line">
+    나에게 맞는 다이아몬드는, 정확히 알고 선택한 다이아몬드입니다.
+  </p>
+</section>
+
+<section id="sources">
+  <div class="section-number">REFERENCE / RESEARCH</div>
+  <h2>참고 자료 · 연구 문헌</h2>
+  <p class="intro">
+    천연 및 합성 다이아몬드의 감별 특징을 이해하는 데 참고할 수 있는 연구 논문과 보석학 자료입니다.
+  </p>
+  <ul class="sources">
+    <li>
+      <strong>Gemological Characteristic Difference between Colorless CVD Synthetic Diamonds and Natural Diamonds</strong><br>
+      Materials, 2021. 천연 다이아몬드와 CVD 합성 다이아몬드의 보석학적·분광학적 특징을 비교한 연구.<br>
+      <a href="https://doi.org/10.3390/ma14206225" target="_blank" rel="noopener noreferrer">논문 원문 및 DOI</a>
+    </li>
+    <li>
+      <strong>Observations on CVD-Grown Synthetic Diamonds: A Review</strong><br>
+      Gems &amp; Gemology, 2016. CVD 합성 다이아몬드의 감별 특징과 분광 분석에 대한 연구 리뷰.<br>
+      <a href="https://www.gia.edu/gia-website/gems-gemology/fall-2016-observations-cvd-grown-synthetic-diamonds-review" target="_blank" rel="noopener noreferrer">GIA 연구 자료</a>
+    </li>
+    <li>
+      <strong>Observations on HPHT-Grown Synthetic Diamonds: A Review</strong><br>
+      Gems &amp; Gemology, 2017. HPHT 합성 다이아몬드의 특징 및 전문 감별 방법에 대한 연구 리뷰.<br>
+      <a href="https://origin.prod.gia.edu/gems-gemology/winter-2017-observations-hpht-grown-synthetic-diamonds" target="_blank" rel="noopener noreferrer">GIA 연구 자료</a>
+    </li>
+    <li>
+      <strong>Laboratory-Grown Diamonds: An Update on Identification and Products Evaluated at GIA</strong><br>
+      Gems &amp; Gemology, 2024. 최근 합성 다이아몬드의 감별 특징과 분석 기술을 정리한 연구 자료.<br>
+      <a href="https://www.gia.edu/gems-gemology/summer-2024-gia-update-on-laboratory-grown-diamonds" target="_blank" rel="noopener noreferrer">GIA 연구 자료</a>
+    </li>
+  </ul>
+  <p class="muted">
+    연구에서 보고된 감별 특징은 모든 다이아몬드에 동일하게 나타나지 않습니다.
+    실제 감별은 여러 분석 결과를 종합해 전문 감정기관에서 수행해야 합니다.
+  </p>
+</section>
+
+</main>
+
+<footer>
+  DIAMOND SELECTION GUIDE · 소비자 정보 제공 프로젝트
+</footer>
+
+<script>
+const checks = Array.from(document.querySelectorAll('.score-check'));
+const scoreElement = document.getElementById('score');
+const progressFill = document.getElementById('progressFill');
+const resultBox = document.getElementById('result');
+
+function calculateScore() {
+  const checkedCount = checks.filter(check => check.checked).length;
+  const score = checkedCount * 2;
+
+  scoreElement.textContent = score;
+  progressFill.style.width = (score / 24 * 100) + '%';
+
+  return { score, checkedCount };
+}
+
+checks.forEach(check => {
+  check.addEventListener('change', () => {
+    calculateScore();
+    resultBox.style.display = 'none';
+  });
+});
+
+function showResult() {
+  const { score, checkedCount } = calculateScore();
+  const title = document.getElementById('resultTitle');
+  const text = document.getElementById('resultText');
+
+  if (score >= 20) {
+    title.textContent = '확인 항목이 충분합니다';
+    text.textContent =
+      '24점 만점 중 ' + score + '점입니다. 여러 구매 전 확인 항목을 점검했습니다. ' +
+      '다만 점수만으로 판매처나 다이아몬드의 진위가 보장되지는 않으므로 감정서 조회와 계약 조건을 마지막으로 확인하세요.';
+  } else if (score >= 14) {
+    title.textContent = '추가 확인을 권장합니다';
+    text.textContent =
+      '24점 만점 중 ' + score + '점입니다. 일부 항목이 확인되지 않았습니다. ' +
+      '특히 감정서 번호, 천연·합성 표기, 제품의 4C 정보와 환불 조건을 확인한 뒤 구매를 결정하세요.';
+  } else {
+    title.textContent = '구매 전 더 확인하세요';
+    text.textContent =
+      '24점 만점 중 ' + score + '점입니다. 현재 체크된 항목은 ' +
+      checkedCount + '개입니다. 감정서와 판매자 정보, 제품 설명을 충분히 확인하기 전에는 서둘러 구매하지 않는 것이 좋습니다.';
+  }
+
+  resultBox.style.display = 'block';
+  resultBox.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+}
+
+function resetChecklist() {
+  checks.forEach(check => {
+    check.checked = false;
+  });
+
+  calculateScore();
+  resultBox.style.display = 'none';
+}
+</script>
+
+</body>
+</html>
